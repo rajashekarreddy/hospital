@@ -1,0 +1,52 @@
+Projects:
+1.       eMR (Medical Records)  (Vaccination, Devlopment Charts, Growrt Charts, Folders to save records) SMS & email – 2 weeks >> 
+
+a.       Children
+
+b.      Women – Later
+
+c.       Others – Later
+
+ 
+
+3 weeks from now On Demo 75%
+
++ 1 to 2 weeks OnUpon Testing & Traing & handover 25%
+
+ 
+
+2.       OP Module  - 4 weeks  + Prescription >> (Appointments, OP Registration and Processing)
+
+a.       Add new functionality of ePrescription
+
+3.       IP Module + Lab Module  + Pharma Module – 8 weeks >> 
+
+4.       JH TV  (TV/ Streaming + Adds on the right side + scrolling for news items + Appointments at the bottom)
+
+5.       IVR – explore for appointments etc etc
+
+6.       Mobile Apps
+
+ 
+ 
+1.       eMR
+
+a.       Register + family members add
+
+                                                               i.      Terms & Conditions  with DND  that I accept you to send me emails and SMS.
+
+b.      Login
+
+c.       3 Charts + Few Folders
+
+d.      Config Charts
+
+e.      Data enry
+
+f.        Display
+
+g.       Send emails and SMS
+
+h.      Provision for sending Misc mass emails or mass SMS
+
+ 

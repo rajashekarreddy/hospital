@@ -1,0 +1,90 @@
+<!--<div>
+    <h2>View 2</h2>
+    Name:
+    <br/>
+    <input type="text" ng-model="filter.godName">
+    <br />
+    <ul>
+        <li ng-repeat="god in gods | filter: filter.godName | orderBy: 'name'">{{god.name | uppercase}} - {{god.city}}</li>
+    </ul>
+
+    <br />
+    <a href='#view1'>view1</a>
+</div>-->
+
+<div class="container-fluid" style="min-height:400px">
+    <div class="row-fluid" id="main_div">
+        <div class="span12">
+            <form name="baby_record_form" id="baby_record_form" method="post" >
+                <input type="hidden" name="id" value="{{recordData.id}}">
+                <div class="modal-header">
+                    <h3>Baby Health Record</h3>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label>Name: <input type="text" name="name" id="name" value="{{recordData.name}}" ng-model="recordData.name" class=""></label>
+                    </div>
+                    <div>
+                        <label>Date of Birth: <input type="text" name="dob" id="dob" value="{{recordData.dob}}" ng-model="recordData.dob" class=""></label>
+                    </div>
+                    <div>
+                        <label>Order of Birth: <input type="text" name="oob" id="oob" value="{{recordData.oob}}" ng-model="recordData.oob" class=""></label>
+                    </div>
+                    <div>
+                        <label>Delivered_at: <input type="text" name="delivered_at" id="delivered_at" value="{{recordData.delivered_at}}" ng-model="recordData.delivered_at" class=""></label>
+                    </div>
+                    <div>
+                        <label>Mode of Delivery: <input type="text" name="mode_of_delivery" id="mode_of_delivery" value="{{recordData.mode_of_delivery}}" ng-model="recordData.mode_of_delivery" class=""></label>
+                    </div>
+                    <div>
+                        <label>Done by Dr.: <input type="text" name="done_by_dr" id="done_by_dr" value="{{recordData.done_by_dr}}" ng-model="recordData.done_by_dr" class=""></label>
+                    </div>
+                    <div>
+                        <label>Birth Weight: <input type="text" name="birth_weight" id="birth_weight" value="{{recordData.birth_weight}}" ng-model="recordData.birth_weight" class=""></label>
+                    </div>
+                    <div>
+                        <label>Head Circumference: <input type="text" name="head_circumference" id="head_circumference" value="{{recordData.head_circumference}}" ng-model="recordData.head_circumference" class=""></label>
+                    </div>
+                    <div>
+                        <label>Length: <input type="text" name="length" id="length" value="{{recordData.length}}" ng-model="recordData.length" class=""></label>
+                    </div>
+                    <div>
+                        <label>Blood Group: <input type="text" name="blood_group" id="blood_group" value="{{recordData.blood_group}}" ng-model="recordData.blood_group" class=""></label>
+                    </div>
+                    <div>
+                        <label>Mother's Name: <input type="text" name="mothers_name" id="mothers_name" value="{{recordData.mothers_name}}" ng-model="recordData.mothers_name" class=""></label>
+                    </div>
+                    <div>
+                        <label>Mother's Blood Group: <input type="text" name="mothers_blood_group" id="mothers_blood_group" value="{{recordData.mothers_blood_group}}" ng-model="recordData.mothers_blood_group" class=""></label>
+                    </div>
+                    <div>
+                        <label>Mother's Occupation: <input type="text" name="mothers_occupation" id="mothers_occupation" value="{{recordData.mothers_occupation}}" ng-model="recordData.mothers_occupation" class=""></label>
+                    </div>
+                    <div>
+                        <label>Father's Name: <input type="text" name="fathers_name" id="fathers_name" value="{{recordData.fathers_name}}" ng-model="recordData.fathers_name" class=""></label>
+                    </div>
+                    <div>
+                        <label>Father's Blood Group: <input type="text" name="fathers_blood_group" id="fathers_blood_group" value="{{recordData.fathers_blood_group}}" ng-model="recordData.fathers_blood_group" class=""></label>
+                    </div>
+                    <div>
+                        <label>Father's Occupation: <input type="text" name="fathers_occupation" id="fathers_occupation" value="{{recordData.fathers_occupation}}" ng-model="recordData.fathers_occupation" class=""></label>
+                    </div>
+                    <div>
+                        <label>Home Address: <textarea name="home_address" id="home_address" ng-model="recordData.home_address" class="">{{recordData.name}}</textarea></label>
+                    </div>
+                    <div>
+                        <label>Telephone Number: <input type="text" name="telephone_no" id="telephone_no" value="{{recordData.telephone_no}}" ng-model="recordData.telephone_no" class=""></label>
+                    </div>                        
+                    <div>
+                        <a href="#" ng-click="saveBabyRecord()" class="btn btn-primary jsave_customer">Submit</a>
+                    </div>
+                </div>
+
+            </form>
+        </div><!--/span-->
+    </div><!--/row-->
+    <hr>
+    <!--<footer>
+        <p>&copy; Company 2012</p>
+    </footer>-->
+</div><!--/.fluid-container-->

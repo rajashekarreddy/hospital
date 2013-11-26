@@ -1,0 +1,122 @@
+<!--<div>
+    <h2>View 1</h2>
+    Name:
+    <br/>
+    <input type="text" ng-model="filter.godName">
+    <br />
+    <ul>
+        <li ng-repeat="god in gods | filter: filter.godName | orderBy: 'name'">{{god.name | uppercase}} - {{god.city}}</li>
+    </ul>
+    <br />
+    God Name: <br />
+    <input type="text" ng-model="newGod.name" />
+    <br />
+    God City: <br />
+    <input type="text" ng-model="newGod.city" />
+    <br />
+    <button style="width:50px;height:25px" ng-click="addGod()">Add</button>
+    <br />
+    <a href='#view2'>view2</a>
+</div>-->
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2" style="float:right;text-align:right">
+            <a class="btn btn-primary" href="#/record">New Record</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div>&nbsp;</div>
+    </div>
+    <div class="row-fluid">
+        <!-- <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        <!-- </div><!--/span-->
+        <div class="span12">
+            <!--<div class="hero-unit">
+              <h1>Hello, world!</h1>
+              <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+              <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <table id="customers_grid_tbl" class="cs_gd"></table>
+                    <div id="customers_grid_pager"></div>
+                </div><!--/span-->
+            </div><!--/row-->
+        </div><!--/span-->
+    </div><!--/row-->
+
+    <hr>
+
+    <!--<footer>
+        <p>&copy; Company 2012</p>
+    </footer>-->
+
+</div><!--/.fluid-container-->
+
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            jsonp: null,
+            jsonpCallback: null
+        });
+
+        $('.pn').click(function() {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        jQuery("#customers_grid_tbl").jqGrid431({
+            url: site_url + 'records/getAngularRecords',
+            datatype: "json",
+            mtype: "POST",
+            colNames: ['ID', 'Name', 'DOB', 'Done by Dr.', 'Father\'s Name', 'Mother\'s Name', 'Home Address', 'Telephone No.', 'Immunisation', 'Edit'],
+            colModel: [
+                {name: 'id', index: 'id', width: '10%'},
+                {name: 'name', index: 'name', width: '10%'},
+                {name: 'dob', index: 'dob', width: '10%'},
+                {name: 'done_by_dr', index: 'done_by_dr', width: '10%'},
+                {name: 'fathers_name', index: 'fathers_name', width: '10%'},
+                {name: 'mothers_name', index: 'mothers_name', width: '10%'},
+                {name: 'home_address', index: 'home_address', width: '20%'},
+                {name: 'telephone_no', index: 'telephone_no', width: '20%'},
+                {name: 'immunisation', index: 'immunisation', width: '15%'},
+                {name: 'edit', index: 'edit', width: '15%'}
+            ],
+            rowNum: 18,
+            height: $(window).height() - 230,
+            autowidth: true,
+            //rowList:[10,20,30],
+            pager: '#customers_grid_pager',
+            sortname: 'id',
+            viewrecords: true,
+            sortorder: "desc",
+            multiselect: false,
+            childGrid: true,
+            childGridIndex: "rows",
+            gridComplete: function() {
+                $('.span12 .ui-jqgrid-bdiv').css('overflow', 'hidden'); // hide horizontal scroll bar
+            }
+        });
+
+    });
+</script>

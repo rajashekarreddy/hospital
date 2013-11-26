@@ -1,0 +1,35 @@
+<div>
+    <form name="customer_form" id="customer_form" method="post" >
+        <input type="hidden" name="id" value="">
+        <div class="modal-header">
+            <h3>User Registration</h3>
+        </div>
+        <div class="modal-body">
+            <div><label>First Name: <input type="text" name="first_name" id="first_name" value="" ></label></div>
+            <div><label>Last Name: <input type="text" name="last_name" id="last_name" value="" ></label></div>
+            <div><label>Surname: <input type="text" name="surname" id="surname" value="" ></label></div>
+            <div><label>Password: <input type="password" name="password" id="password" value="" ></label></div>
+            <div><label>Confirm Password: <input type="password" name="conf_pwd" id="conf_pwd" value="" ></label></div>
+            <div><label>Contact Number: <input type="text" name="contact_number" id="contact_number" value="" ></label></div>
+            <div><label>Address: <textarea name="address" id="address" ></textarea></label></div>
+            <div><label>City/Town: <input type="text" name="city" id="city" value="" ></label></div>
+            <div><label>State: <input type="text" name="state" id="state" value="" ></label></div>
+            <div><label>Category: <select name="categories_id" id="categories_id" class="ccategory">
+                        <option value="">Select User Type</option>
+                        <option value="2" >Farmer</option>
+                        <option value="3" >Buyer</option>
+                        <option value="4" >Supplier</option>
+                        <option value="5" >Customer</option>
+                        <option value="6" >Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="cateroy_html" style="display:none">
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary jsave_customer">Submit</a>
+            </div>
+        </div>
+
+    </form>
+</div><!--/span-->
