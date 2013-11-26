@@ -6,6 +6,13 @@ class Records extends Main_Controller {
         $data['header'] = $this->load->view('include/my_header',$header_data,true);
         $this->load->view('user/index',$data);
     }
+
+    public function hc_chart(){
+        $header_data['active_tab'] = 'user';
+        $header_data['user_details'] = $this->user_details;
+        $data['header'] = $this->load->view('include/my_header',$header_data,true);
+        $this->load->view('user/chart',$data);
+    }
     
     public function app(){
         $header_data['active_tab'] = 'user';
