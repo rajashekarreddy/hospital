@@ -16,12 +16,13 @@
                     type: 'areaspline'
                 },
                 title: {
-                    text: 'Average fruit consumption during one week'
+                    text: 'IAP Chart on Weight for <strong> BOYS </strong> from 0-36 Months'
                 },
                 xAxis: {
                      title: {
                         text: 'Months'
                     },
+                    tickmarkPlacement: 'on',
                     categories: ['1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','18','24','30','36']
                 },
                 yAxis: {
@@ -31,6 +32,7 @@
                 },
                 tooltip: {
                     shared: true,
+                    crosshairs: true,
                     headerFormat: '<small>{point.key} Month(s)</small> <br/>',
                     valueSuffix: ' KG'
                 },
@@ -44,13 +46,13 @@
                 },
                 series: [{
                     name: 'John',
-                    data: [3, 4, 3, 5, 4, 10, 20, 4, 3, 5, 4, 10, 20, 3, 4, 3]
+                    data: [0, 4, 3, 5, 4, 10, 20, 4, 3, 5, 4, 10, 20, 3, 4, 3]
                 }, {
                     name: 'Jane',
-                    data: [1, 3, 4, 3, 3, 5, 4, 1, 3, 4, 3, 4, 5, 4, 1, 3]
+                    data: [0, 3, 4, 3, 3, 5, 4, 1, 3, 4, 3, 4, 5, 4, 1, 3]
                 }, {
                     name: 'Man',
-                    data: [6, 7, 9, 9, 6, 5, 8, 6, 7, 9, 10, 6, 5, 4, 8, 9]
+                    data: [0, 7, 9, 9, 6, 5, 8, 6, 7, 9, 10, 6, 5, 4, 8, 9]
                 }]
             });
     });
